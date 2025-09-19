@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <!-- Hexágono com linhas cruzadas -->
+  <g transform="translate(250, 120)">
+    <polygon points="0,-80 70,-40 70,40 0,80 -70,40 -70,-40" fill="none" stroke="#c9a95c" stroke-width="8"/>
+    <line x1="-70" y1="-40" x2="70" y2="40" stroke="#c9a95c" stroke-width="8"/>
+    <line x1="-70" y1="40" x2="70" y2="-40" stroke="#c9a95c" stroke-width="8"/>
+    <circle cx="0" cy="-80" r="10" fill="#c9a95c"/>
+    <circle cx="-70" cy="40" r="10" fill="#c9a95c"/>
+    <circle cx="70" cy="40" r="10" fill="#c9a95c"/>
+  </g>
+  
+  <!-- Texto "NOXUS" -->
+  <text x="250" y="220" font-family="Montserrat, sans-serif" font-weight="700" font-size="60" text-anchor="middle" fill="#1a2a3a">NOXUS</text>
+  
+  <!-- Texto "STUDIO" -->
+  <text x="250" y="260" font-family="Montserrat, sans-serif" font-weight="400" font-size="30" text-anchor="middle" letter-spacing="8" fill="#1a2a3a">STUDIO</text>
+</svg>
