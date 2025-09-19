@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Noxus Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portfolio-header {
+            padding: 120px 0 60px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .portfolio-header h1 {
+            color: var(--white);
+        }
+        
+        .portfolio-description {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .project {
+            padding: 80px 0;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .project-header h2 {
+            margin-bottom: 10px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            background-color: var(--white);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/noxus-logo.svg" alt="Noxus Studio Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>Nossos Projetos de Destaque</h1>
+            <div class="portfolio-description">
+                <p>Aqui estão alguns de nossos projetos mais recentes que demonstram a qualidade e a diversidade do nosso trabalho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="container">
+            <div class="project-header">
+                <h2>Projetos em Destaque</h2>
+                <p>Conheça nossos trabalhos mais recentes em Web Design, Branding e Marketing Digital.</p>
+            </div>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/Template.jpeg" alt="Web Design">
+                    <div class="gallery-caption">
+                        <p>Projeto 1: Web Design - Template moderno e responsivo.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/3.jpeg" alt="Branding">
+                    <div class="gallery-caption">
+                        <p>Projeto 2: Branding - Identidade visual impactante.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/4.jpeg" alt="Branding">
+                    <div class="gallery-caption">
+                        <p>Projeto 2: Branding - Aplicação da marca em diferentes contextos.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/6.jpeg" alt="Marketing Digital">
+                    <div class="gallery-caption">
+                        <p>Projeto 3: Marketing Digital - Estratégia de conteúdo para redes sociais.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://wa.me/5586999662001" target="_blank" class="btn btn-primary">Quero um Projeto Como Este</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/noxus-logo.svg" alt="Noxus Studio Logo">
+                    <p>"Transformando Visões em Presença Digital Impactante."</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>Email: noxuscontprincipal@gmail.com</p>
+                    <p>WhatsApp: +55 86 999662001</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/noxus.studio.br" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/noxus.studio.br" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Noxus Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

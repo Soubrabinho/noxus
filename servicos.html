@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Noxus Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .services-header {
+            padding: 120px 0 60px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .services-header h1 {
+            color: var(--white);
+        }
+        
+        .pricing {
+            padding: 80px 0;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .pricing-card p {
+            margin-bottom: 25px;
+            color: var(--dark-gray);
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .pricing-features li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .pricing-card.featured {
+            border: 2px solid var(--secondary-color);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .pricing-card.featured:before {
+            content: 'Mais Popular';
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/noxus-logo.svg" alt="Noxus Studio Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-header">
+        <div class="container">
+            <h1>Escolha o Plano Ideal para o Seu Negócio</h1>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Pacote Essencial</h3>
+                    <p>Ideal para quem está começando.</p>
+                    <ul class="pricing-features">
+                        <li>Site de 1 a 3 páginas</li>
+                        <li>Design personalizado</li>
+                        <li>5 imagens exclusivas para mídias sociais</li>
+                        <li>Otimização para dispositivos móveis</li>
+                    </ul>
+                    <a href="contato.html" class="btn btn-primary">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Pacote Completo</h3>
+                    <p>Nosso pacote mais popular, para quem busca crescimento.</p>
+                    <ul class="pricing-features">
+                        <li>Site de até 10 páginas</li>
+                        <li>Design e conteúdo personalizados</li>
+                        <li>15 imagens exclusivas por mês</li>
+                        <li>Suporte técnico por 3 meses</li>
+                    </ul>
+                    <a href="https://wa.me/5586999662001" target="_blank" class="btn btn-primary">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Solução Sob Medida</h3>
+                    <p>Criado para negócios com necessidades específicas e objetivos ambiciosos.</p>
+                    <p>Entre em contato conosco para uma consultoria gratuita e um orçamento sem compromisso.</p>
+                    <a href="https://wa.me/5586999662001" target="_blank" class="btn btn-primary">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/noxus-logo.svg" alt="Noxus Studio Logo">
+                    <p>"Transformando Visões em Presença Digital Impactante."</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>Email: noxuscontprincipal@gmail.com</p>
+                    <p>WhatsApp: +55 86 999662001</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/noxus.studio.br" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/noxus.studio.br" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Noxus Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
